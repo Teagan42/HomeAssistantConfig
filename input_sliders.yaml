@@ -1,0 +1,53 @@
+hvac_home_cool_set:
+  name: Cool To
+  min: 60
+  max: 100
+  initial: 77
+  step: 1
+  icon: mdi:snowman
+  unit_of_measurement: '°F'
+
+hvac_home_heat_set:
+  name: Heat To
+  min: 60
+  max: 100
+  initial: 70
+  step: 1
+  icon: mdi:fire
+  unit_of_measurement: '°F'
+
+hvac_away_cool_set:
+  name: Cool To
+  min: 60
+  max: 100
+  initial: 82
+  step: 1
+  icon: mdi:snowman
+  unit_of_measurement: '°F'
+
+hvac_away_heat_set:
+  name: Heat To
+  min: 60
+  max: 100
+  initial: 66
+  step: 1
+  icon: mdi:fire
+  unit_of_measurement: '°F'
+
+hvac_vaca_cool_set:
+  name: Cool To
+  min: 60
+  max: 100
+  initial: 100
+  step: 1
+  icon: mdi:snowman
+  unit_of_measurement: '°F'
+
+hvac_vaca_heat_set:
+  name: Heat To
+  min: 60
+  max: 100
+  initial: 60
+  step: 1
+  icon: mdi:fire
+  unit_of_measurement: '°F'

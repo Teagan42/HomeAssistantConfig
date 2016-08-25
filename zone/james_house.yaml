@@ -1,0 +1,5 @@
+name: James House
+latitude: !secret james_lat
+longitude: !secret james_long
+radius: 1000
+icon: mdi:glasses

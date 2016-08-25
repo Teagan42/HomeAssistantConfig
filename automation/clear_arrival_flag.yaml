@@ -1,0 +1,13 @@
+alias: Clear Arrival Flags
+trigger:
+  platform: state
+  entity_id:
+    - input_boolean.grace_arrived_at_work
+    - input_boolean.teagan_arrived_at_work
+  state: 'on'
+  for:
+    hours: 2
+action:
+  - service: input_boolean.turn_off
+    data_template:
+      entity_id: "{{ trigger.entity_id }}"

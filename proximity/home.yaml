@@ -1,0 +1,7 @@
+zone: home
+devices:
+  - device_tracker.grace_nexus_6
+  - device_tracker.teagan_nexus_6
+  - device_tracker.persia_zte
+tolerance: 10
+unit_of_measurement: mi

@@ -1,0 +1,7 @@
+default: error
+logs:
+  homeassistant.components.automation: debug
+  homeassistant.components.group: debug
+  homeassistant.components.script: debug
+  homeassistant.components.alexa: debug
+  homeassistant.components.panel_iframe: debug

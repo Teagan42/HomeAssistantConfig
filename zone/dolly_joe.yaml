@@ -1,0 +1,5 @@
+name: Dolly and Joe's House
+latitude: !secret dolly_joe_lat
+longitude: !secret dolly_joe_long
+radius: 30
+icon: mdi:account

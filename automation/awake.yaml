@@ -1,0 +1,16 @@
+alias: Awake
+trigger:
+  platform: template
+  value_template: >
+    {%- set LightOn -%}
+      {%- for switch in ['switch.living_room_ceiling_light', 'switch.dining_room_ceiling_light','switch.chill_room_lights','switch.master_bedroom_ceiling_light'] -%}
+          {%- if states(switch)== 'on' -%}
+              True
+          {%- endif -%}
+      {%- endfor -%}
+    {%- endset %}
+    {{
+      states.input_boolean.sleep_mode.state == 'on' and LightOn
+    }}
+action:
+  service: script.awake_mode

@@ -1,0 +1,9 @@
+platform: forecast
+api_key: !secret forecastio_key
+monitored_conditions:
+  - temperature
+  - humidity
+  - pressure
+  - icon
+  - precip_intensity
+  - precip_probability

@@ -1,0 +1,8 @@
+alias: 'Someone Comes Home'
+trigger:
+  platform: state
+  entity_id: group.family
+  from: 'not_home'
+  to: 'home'
+action:
+  service: script.arrive_home

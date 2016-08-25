@@ -1,0 +1,29 @@
+alias: Sleep
+trigger:
+  platform: template
+  value_template: >
+    {%- set LightOn -%}
+      {%- for switch in [
+            'switch.living_room_ceiling_light',
+            'switch.dining_room_ceiling_light',
+            'switch.chill_room_lights',
+            'switch.master_bedroom_ceiling_light'] -%}
+          {%- if states(switch)== 'on' -%}
+              True
+          {%- endif -%}
+      {%- endfor -%}
+    {%- endset %}
+    {{ not(LightOn) and
+       states.sun.sun.state == 'below_horizon' and
+       states.group.family.state == 'home' and
+       (
+        not(states.device_tracker.teagan_nexus_6.attributes.battery) or
+        states.device_tracker.teagan_nexus_6.attributes.battery > 90
+       ) and
+       (
+        not(states.device_tracker.grace_nexus_6.attributes.battery) or
+        states.device_tracker.grace_nexus_6.attributes
+       )
+    }}
+action:
+  service: script.sleep_mode

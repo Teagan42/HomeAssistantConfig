@@ -1,0 +1,16 @@
+alias: Open Garage Door
+trigger:
+  platform: zone
+  entity_id:
+    - device_tracker.grace_nexus_6
+    - device_tracker.teagan_nexus_6
+  zone: zone.home
+  event: enter
+condition:
+  condition: state
+  entity_id: switch.garage_door
+  state: 'on'
+action:
+  service: switch.turn_off
+  data:
+    entity_id: switch.garage_door

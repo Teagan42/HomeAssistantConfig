@@ -1,0 +1,11 @@
+sequence:
+  - service: lock.lock
+    data:
+      entity_id: lock.front_door
+  - service: switch.turn_on
+    data:
+      entity_id: switch.garage_door
+  - service: alarm_control_panel.alarm_arm_away
+    data:
+      entity_id: alarm_control_panel.alarm
+      code: !secret alarm_code

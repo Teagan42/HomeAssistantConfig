@@ -1,0 +1,40 @@
+alias: Away - Door Opened
+trigger:
+  - platform: template
+    value_template: >
+      {%- set DoorOpen -%}
+        {%- for sensor in ['sensor.front_door_sensor', 'sensor.interior_garage_door_sensor'] -%}
+          {%- if states(sensor) == 'on' -%}
+            True
+          {%- endif -%}
+        {%- endfor -%}
+        {%- for lock in ['lock.front_door'] -%}
+          {%- if states(lock) == 'unlocked' -%}
+            True
+          {%- endif -%}
+        {%- endfor -%}
+        {%- if not(DoorOpen) -%}
+          False
+        {%- endif -%}
+      {%- endset -%}
+      {{
+        DoorOpen
+      }}
+  - platform: state
+    entity_id: sensor.dining_room_motion
+    from: 'off'
+    to: 'on'
+condition:
+  condition: or
+  conditions:
+    - condition: state
+      entity_id: alarm_control_panel.alarm
+      state: 'armed_home'
+    - condition: state
+      entity_id: alarm_control_panel.alarm
+      state: 'armed_away'
+action:
+  service: alarm_control_panel.alarm_trigger
+  data:
+    entity_id: alarm_control_panel.alarm
+    code: !secret alarm_code

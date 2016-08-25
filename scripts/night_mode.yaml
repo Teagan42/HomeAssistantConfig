@@ -1,0 +1,7 @@
+sequence:
+- service: light.turn_on
+  data:
+    entity_id: light.front_deck_1
+- service: light.turn_on
+  data:
+    entity_id: light.front_deck_2

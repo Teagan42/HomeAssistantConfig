@@ -1,0 +1,58 @@
+chill_room:
+  name: Chill Room
+  view: yes
+  entities:
+    - media_player.48d04c6c0bf62ed0complexappandroid
+    - switch.chill_room_lights
+
+dining_room_fan:
+  name: Dining Room Fan
+  icon: mdi:fan
+  view: no
+  entities:
+    - switch.living_room_ceiling_fan__hig
+    - switch.living_room_ceiling_fan__med
+    - switch.living_room_ceiling_fan__low
+    - switch.living_room_ceiling_fan__off
+
+dining_room:
+  name: Dining Room
+  view: yes
+  entities:
+    - group.dining_room_fan
+    - switch.dining_room_ceiling_light
+
+living_room_fan:
+  name: Living Room Fan
+  icon: mdi:fan
+  view: no
+  entities:
+    - switch.living_room_ceiling_fan__hig
+    - switch.living_room_ceiling_fan__med
+    - switch.living_room_ceiling_fan__low
+    - switch.living_room_ceiling_fan__off
+
+living_room:
+  name: Living Room
+  view: yes
+  entities:
+    - group.living_room_fan
+    - switch.living_room_ceiling_light
+    - media_player.ead79392dc1a30accomplexappandroid
+
+master_fan:
+  name: Master Fan
+  icon: mdi:fan
+  view: no
+  entities:
+    - switch.master_ceiling_fan__high
+    - switch.master_ceiling_fan__med
+    - switch.master_ceiling_fan__low
+    - switch.master_ceiling_fan__off
+
+master_bed:
+  name: Master Bedroom
+  view: yes
+  entities:
+    - switch.master_ceiling_light
+    - media_player.slartibartfast

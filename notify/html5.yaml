@@ -1,0 +1,4 @@
+platform: html5
+name: html5
+gcm_api_key: !secret google_key
+gcm_sender_id: Deepthought

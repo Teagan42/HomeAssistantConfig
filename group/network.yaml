@@ -1,0 +1,26 @@
+bandwidth:
+  name: bandwidth
+  view: no
+  entities:
+    - sensor.fastcom_download
+    - sensor.speedtest_download
+    - sensor.speedtest_upload
+    - sensor.speedtest_ping
+
+machines:
+  name: Machines
+  view: no
+  entities:
+    - device_tracker.zaphod
+    - device_tracker.zarquon
+    - device_tracker.hub_solar_city
+    - device_tracker.hub_isy994
+    - device_tracker.hub_wink
+
+network:
+  name: Network
+  view: yes
+  icon: mdi:server-network
+  entities:
+    - group.bandwidth
+    - group.machines

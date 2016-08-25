@@ -1,0 +1,5 @@
+name: Nikki's House
+latitude: !secret nikki_lat
+longitude: !secret nikki_long
+radius: 30
+icon: mdi:account

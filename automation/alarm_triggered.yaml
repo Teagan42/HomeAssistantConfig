@@ -1,0 +1,11 @@
+alias: Alarm Triggered
+trigger:
+  platform: state
+  entity_id: alarm_control_panel.alarm
+  to: 'triggered'
+action:
+  service: notify.hog_sns
+  data_template:
+    message: 'Alarm has been triggered. https://control.teagantotally.rocks{{ states.camera.front_door.attributes.entity_picture }}'
+    target: !secret aws_topic_important
+    title: 'ALARM TRIGGERED'
