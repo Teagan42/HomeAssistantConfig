@@ -1,1 +1,0 @@
-entry_set_point: 'curl -k "https://{{ip}}:88/cgi-bin/CGIProxy.fcgi?cmd=ptzGotoPresetPoint&name={{set_point}}&usr={{user}}&pwd={{password}}"'

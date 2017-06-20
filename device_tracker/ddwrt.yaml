@@ -1,5 +1,0 @@
-platform: ddwrt
-host: 192.168.1.1
-username: !secret ddwrt_username
-password: !secret ddwrt_password
-track_new_devices: no

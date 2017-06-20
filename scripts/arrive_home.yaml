@@ -1,8 +1,0 @@
-sequence:
-  - service: lock.unlock
-    data:
-      entity_id: lock.front_door
-  - service: alarm_control_panel.alarm_disarm
-    data:
-      entity_id: alarm_control_panel.alarm
-      code: !secret alarm_code

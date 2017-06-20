@@ -1,4 +1,0 @@
-broker: 127.0.0.1
-port: 1884
-client_id: hass
-keepalive: 60

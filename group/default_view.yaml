@@ -1,6 +1,0 @@
-default_view:
-  view: yes
-  entities:
-    - alarm_control_panel.alarm
-    - group.bandwidth
-    - input_boolean.sleep_mode

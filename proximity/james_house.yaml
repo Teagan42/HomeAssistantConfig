@@ -1,5 +1,0 @@
-zone: james_house
-devices:
-  - device_tracker.teagan_nexus_6
-tolerance: 10
-unit_of_measurement: mi

@@ -1,7 +1,0 @@
-platform: google_travel_time
-name: Grace Morning
-api_key: !secret google_key
-origin: !secret home_address
-destination: !secret greendragon_address
-options:
-  mode: driving

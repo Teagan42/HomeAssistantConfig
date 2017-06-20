@@ -1,5 +1,0 @@
-name: Jay's Apartment
-latitude: !secret jay_lat
-longitude: !secret jay_long
-radius: 30
-icon: mdi:account

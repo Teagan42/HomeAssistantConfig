@@ -1,7 +1,0 @@
-platform: google_travel_time
-name: Teagan Morning
-api_key: !secret google_key
-origin: !secret home_address
-destination: !secret galvanize_address
-options:
-  mode: driving

@@ -1,5 +1,0 @@
-name: Galvanize GT
-latitude: !secret galvanize_lat
-longitude: !secret galvanize_long
-radius: 110
-icon: mdi:server-network
