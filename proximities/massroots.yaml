@@ -1,0 +1,4 @@
+zone: massroots
+devices:
+  - device_tracker.teagan_phone
+tolerance: 20

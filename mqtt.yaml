@@ -1,0 +1,8 @@
+broker: !secret mqtt_broker_ip
+port: !secret mqtt_broker_port
+client_id: hass
+keepalive: 60
+protocol: 3.1
+username: !secret mqtt_user
+password: !secret mqtt_pass
+#certificate: ./certs/mosquitto.crt

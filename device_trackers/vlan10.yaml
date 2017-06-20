@@ -1,0 +1,3 @@
+platform: nmap_tracker
+hosts: 10.0.10.0/24
+home_interval: 10

@@ -1,0 +1,5 @@
+name: Green Dragon
+latitude: !secret greendragon_lat
+longitude: !secret greendragon_long
+radius: 260
+icon: mdi:pine-tree

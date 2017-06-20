@@ -1,0 +1,4 @@
+zone: green_dragon
+devices:
+  - device_tracker.grace_phone
+tolerance: 20

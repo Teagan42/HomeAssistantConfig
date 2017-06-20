@@ -1,0 +1,24 @@
+alias: Trigger Alarm
+trigger:
+  - platform: state
+    entity_id:
+      - binary_sensor.front_door_sensor
+      - binary_sensor.interior_garage_door_sensor
+    state: 'on'
+  - platform: state
+    entity_id:
+      - lock.front_door
+    state: 'unlocked'
+condition:
+  - condition: or
+    conditions:
+      - condition: state
+        entity_id: alarm_control_panel.magrathea_alarm
+        state: 'armed_away'
+      - condition: state
+        entity_id: alarm_control_panel.magrathea_alarm
+        state: 'armed_home'
+action:
+  - service: alarm_control_panel.alarm_trigger
+    data:
+      entity_id: alarm_control_panel.magrathea_alarm

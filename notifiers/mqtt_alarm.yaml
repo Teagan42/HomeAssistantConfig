@@ -1,0 +1,17 @@
+platform: rest_data
+name: MQTT Alarm
+resource: http://deepthought:8123/api/services/script/mqtt_notify_adults
+method: POST_JSON
+message_param_name: content
+title_param_name: title
+data_template:
+  actions:
+    - title: Disarm
+      topic: /home/alarm
+      data: DISARM
+    - title: Away Mode
+      topic: /home/alarm
+      data: AWAY
+    - title: Home Mode
+      topic: /home/alarm
+      data: HOME

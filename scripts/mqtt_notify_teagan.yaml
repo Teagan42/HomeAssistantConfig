@@ -1,0 +1,42 @@
+sequence:
+  - service: mqtt.publish
+    data_template:
+      retain: >
+        {%- if retain is defined -%}
+          {{ retain }}
+        {%- else -%}
+          false
+        {%- endif -%}
+      qos: >
+        {%- if qos is defined -%}
+          {{ qos }}
+        {%- else -%}
+          1
+        {%- endif -%}
+      topic: >
+        owntracks/teagan/
+        {%- if device is defined -%}
+          {{ device }}
+        {%- else -%}
+          phone
+        {%- endif -%}
+        /cmd
+      payload: >
+        {"_type": "cmd",
+         "action": "notify",
+         "notification": {
+           "_type": "notify",
+           "title": "{{ title }}",
+           "content": "{{ content }}",
+           "actions": [
+             {%- for action in actions -%}
+             {
+               "_type": "action",
+               "title": "{{ action.title }}",
+               "publishTopic": "{{ action.topic }}",
+               "data": "{{ action.data }}"
+             }{%- if not loop.last -%},{%- endif -%}
+             {%- endfor %}
+           ]
+         }
+        }

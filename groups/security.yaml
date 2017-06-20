@@ -1,0 +1,9 @@
+name: Security
+view: yes
+icon: mdi:lock
+entities:
+  - group.all_locks
+  - alarm_control_panel.magrathea_alarm
+  - binary_sensor.interior_garage_door_sensor
+  - binary_sensor.front_door
+  - cover.garage_door

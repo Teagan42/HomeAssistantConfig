@@ -1,0 +1,18 @@
+platform: darksky
+api_key: !secret darksky_key
+monitored_conditions:
+  - precip_type
+  - precip_intensity
+  - precip_probability
+  - temperature
+  - apparent_temperature
+  - dew_point
+  - wind_speed
+  - wind_bearing
+  - cloud_cover
+  - humidity
+  - pressure
+  - minutely_summary
+  - hourly_summary
+  - daily_summary
+ 

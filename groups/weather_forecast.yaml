@@ -1,0 +1,8 @@
+name: Weather Forecast
+view: no
+icon: mdi:weather-pouring
+entities:
+  - sensor.dark_sky_daily_summary
+  - sensor.dark_sky_hourly_summary
+  - sensor.dark_sky_minutely_summary
+  - sensor.dark_sky_precip_probability

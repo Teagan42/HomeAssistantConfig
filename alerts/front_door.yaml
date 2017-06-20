@@ -1,0 +1,8 @@
+name: Front Door is Open
+entity_id: binary_sensor.front_door_sensor
+state: 'on'
+repeat: 10
+skip_first: True
+can_acknowledge: True
+notifiers:
+  - mqtt_all

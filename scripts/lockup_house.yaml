@@ -1,0 +1,35 @@
+sequence:
+  - service: script.mqtt_notify_all
+    data:
+      title: 'Security'
+      content: 'Locking up the house'
+  - service: lock.lock
+    data:
+      entity_id:
+        - lock.front_door
+        - lock.grow_door
+  - service: script.garage_door_action
+    data:
+      action: 'close'
+  - service: switch.turn_off
+    data:
+      entity_id:
+        - switch.chill_room_lights
+        - switch.dining_room_ceiling_light
+        - switch.living_room_ceiling_light
+        - switch.kitchen_light
+        - switch.master_ceiling_light
+        - switch.persia_ceiling_light
+  - service_template: >
+      {%- set mode -%}
+      {%- if awayMode -%}
+        away
+      {%- else -%}
+        home
+      {%- endif -%}
+      {%- endset -%}
+      {{
+        "alarm_control_panel.alarm_arm_" + mode
+      }}
+    data:
+      entity_id: alarm_control_panel.magrathea_alarm

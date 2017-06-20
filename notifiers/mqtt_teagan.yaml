@@ -1,0 +1,11 @@
+platform: rest_data
+name: MQTT Teagan
+resource: http://deepthought:8123/api/services/script/mqtt_notify_teagan
+method: POST_JSON
+message_param_name: content
+title_param_name: title
+data_template:
+  actions:
+    - title: >
+        {{ states.device_tracker.teagan_phone.state }}
+      topic: notify/test

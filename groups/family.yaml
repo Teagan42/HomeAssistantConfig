@@ -1,0 +1,7 @@
+name: Family
+view: no
+icon: mdi:account-multiple
+entities:
+  - device_tracker.grace_phone
+  - device_tracker.persia_zte
+  - device_tracker.teagan_phone

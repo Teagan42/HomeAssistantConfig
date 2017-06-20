@@ -1,0 +1,10 @@
+group.all_automations:
+  hidden: False
+group.all_scripts:
+  hidden: False
+group.all_locks:
+  hidden: False
+group.family:
+  hidden: False
+group.trusted_friends:
+  hidden: False

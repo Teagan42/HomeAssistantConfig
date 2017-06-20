@@ -1,0 +1,11 @@
+alias: Arrive Home
+trigger:
+  - platform: template
+    value_template: >
+      {{
+        states.group.family.state == 'home'
+        or
+        states.group.trusted_friends.state == 'home'
+      }}
+action:
+  - service: script.open_house

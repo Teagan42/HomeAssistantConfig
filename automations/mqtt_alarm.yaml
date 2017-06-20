@@ -1,0 +1,8 @@
+alias: MQTT Alarm Action
+trigger:
+  - platform: mqtt
+    topic: /home/alarm
+action:
+  - service_template: >
+      {%- set actionMap = {'DISARM': 'disarm', 'AWAY': 'arm_away', 'HOME': 'arm_home'} -%}
+      alarm_control_panel.alarm_{{ actionMap[trigger.payload] }}

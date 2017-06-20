@@ -1,0 +1,10 @@
+alias: Sleep Mode
+trigger:
+  - platform: state
+    entity_id: binary_sensor.sleep_mode
+    state: 'on'
+condition:
+  condition: sun
+  after: sunset
+action:
+  - service: script.sleep_mode

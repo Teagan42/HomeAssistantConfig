@@ -1,0 +1,3 @@
+platform: plex
+include_non_clients: true
+use_episode_art: true

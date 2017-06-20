@@ -1,0 +1,15 @@
+name: Network Devices
+view: no
+icon: mdi:server
+entities:
+  - device_tracker.apache
+  - device_tracker.hass
+  - device_tracker.hass_test
+  - device_tracker.deepthought
+  - device_tracker.hub_isy994
+  - device_tracker.hub_solar_city
+  - device_tracker.plex
+  - device_tracker.zarquon
+  - device_tracker.zarquon_2
+  - device_tracker.zaphod
+  - device_tracker.teagansmbp

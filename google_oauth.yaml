@@ -1,0 +1,2 @@
+client_id: !secret google_oauth_client_id
+client_secret: !secret google_oauth_client_secret

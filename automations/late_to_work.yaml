@@ -1,0 +1,44 @@
+alias: Late to Work
+trigger:
+  - platform: template
+    value_template: >
+      {{
+        now().hour == 7
+        and
+        now().minute >= 10
+        and
+        now().weekday() < 5
+        and
+        now() | string < states.calendar.teagan_out_of_office.attributes.start_time
+        and
+        now() | string < states.calendar.teagan_work_from_home.attributes.start_time
+        and
+        states.binary_sensor.sleepnumber_teagan_teagan_is_in_bed.state == 'on'
+      }}
+condition:
+  - condition: state
+    entity_id: binary_sensor.sleepnumber_teagan_teagan_is_in_bed
+    state: 'on'
+    for:
+      hours: 1
+action:
+  - service: notify.slack__massroots
+    data_template:
+      message: >
+        {%- set responses = [
+          'Hey gang! It appears as if her royal highness is still in bed. Let\'s see if she cares enough to come in today.',
+          'As if you don\'t have enough going on, now we need to work out how to get Teagan out of bed.',
+          'In the beginning, the universe was created - but Teagan wasn\'t awake to see it.'] -%}
+        Eddie> {{ responses | random }}
+  - service: notify.mqtt_teagan
+    data:
+      title: "You're Late"
+      message: "Will you be making it in to work today?"
+      data:
+        actions:
+          - topic: "/notify/late_to_work"
+            data: "NO" 
+            title: "No"
+          - topic: "/notify/late_to_work"
+            data: "YES"
+            title: "Yes"

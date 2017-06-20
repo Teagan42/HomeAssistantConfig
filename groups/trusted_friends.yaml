@@ -1,0 +1,12 @@
+name: Trusted Friends
+view: no
+icon: mdi:account-multiple-outline
+entities:
+  - device_tracker.alex
+  - device_tracker.james
+  - device_tracker.keith
+  - device_tracker.becky
+  - device_tracker.alan
+  - device_tracker.alan_ipad
+  - device_tracker.jen
+  - device_tracker.jen_ipad

@@ -1,0 +1,18 @@
+alias: Out of Office
+trigger:
+  - platform: state
+    entity_id: calendar.teagan_out_of_office
+    from: 'off'
+    to: 'on'
+  - platform: mqtt
+    topic: "/notify/late_to_work"
+    payload: "NO"
+action:
+  - service: notify.slack__massroots
+    data_template:
+      message: >
+        {%- set responses = [
+          'I\'m just pleased as punch to announce: you don\'t have to deal with Teagan at all today!',
+          'Knock, Knock... *who\'s there?* not Teagan today!',
+          'Think of all of the work you guys will get done today with Teagan out of the office!'] -%}
+        Eddie> {{ responses | random }}

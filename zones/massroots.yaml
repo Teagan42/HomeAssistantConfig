@@ -1,0 +1,5 @@
+name: MassRoots
+latitude: !secret massroots_lat
+longitude: !secret massroots_long
+radius: 110
+icon: mdi:server-network

@@ -1,0 +1,78 @@
+homeassistant:
+  name: Heart of Gold
+  latitude: !secret latitude
+  longitude: !secret longitude
+  elevation: 1724
+  unit_system: imperial
+  time_zone: America/Denver
+  customize: !include_dir_merge_named customizations
+
+ffmpeg:
+
+http:
+  base_url: http://deepthought:8123
+
+octoprint:
+  host: octopi.int.teagantotally.rocks
+  api_key: !secret printer_api_key
+
+group: !include_dir_named groups
+
+alert: !include_dir_named alerts
+
+automation: !include_dir_list automations
+
+proximity: !include_dir_named proximities
+
+android_ip_webcam: !include_dir_list android_ip_webcams
+
+script: !include_dir_named scripts
+
+camera: !include_dir_list cameras
+
+google: !include google_oauth.yaml
+
+alarm_control_panel: !include_dir_list alarm_control_panels
+
+media_player: !include_dir_list media_players
+
+isy994: !include isy994.yaml
+
+image_processing: !include_dir_list image_processing
+
+sleepiq: !include sleepiq.yaml
+
+notify: !include_dir_list notifiers
+
+mqtt: !include mqtt.yaml
+
+input_boolean: !include_dir_named input_booleans
+
+binary_sensor: !include_dir_list binary_sensors
+
+device_tracker: !include_dir_list device_trackers
+
+sensor: !include_dir_list sensors
+
+cover: !include_dir_list covers
+
+zone: !include_dir_list zones
+
+logbook:
+
+sun:
+  elevation: 1724
+
+history:
+
+frontend:
+
+#discovery:
+
+conversation:
+
+logger:
+  default: error
+  logs:
+    homeassistant.components.camera: critical
+    homeassistant.components.media_player.spotify: info

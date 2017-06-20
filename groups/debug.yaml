@@ -1,0 +1,9 @@
+name: Debug
+icon: mdi:settings
+view: yes
+entities:
+  - group.all_automations
+  - group.all_scripts
+  - input_boolean.light_from_motion_dining
+  - input_boolean.light_from_motion_kitchen
+  - input_boolean.movie_mode_light

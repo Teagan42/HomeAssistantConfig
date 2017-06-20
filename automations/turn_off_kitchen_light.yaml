@@ -1,0 +1,11 @@
+alias: Turn Off Kitchen Light
+trigger:
+  - platform: state
+    entity_id: switch.kitchen_light
+    state: 'on'
+    for:
+      minutes: 30
+action:
+  - service: switch.turn_off
+    data:
+      entity_id: switch.kitchen_light

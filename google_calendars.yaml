@@ -1,0 +1,36 @@
+
+- cal_id: !secret teagan_email
+  entities:
+  - device_id: !secret teagan_cal_id
+    name: !secret teagan_email
+    track: true
+  - device_id: teagan_work_from_home
+    name: Teagan is Working From Home
+    search: "WFH"
+    track: true
+  - device_id: teagan_out_of_office
+    name: Teagan is Out of Office
+    search: "Out of Office"
+    track: true
+  - device_id: marvin_vet
+    name: Marvin Vet Appointment
+    search: "Vet"
+    track: true
+
+- cal_id: '#contacts@group.v.calendar.google.com'
+  entities:
+  - device_id: contacts
+    name: Contacts
+    track: true
+
+- cal_id: en.usa#holiday@group.v.calendar.google.com
+  entities:
+  - device_id: holidays_in_united_states
+    name: Holidays in United States
+    track: true
+
+- cal_id: !secret teagan_email_work
+  entities:
+  - device_id: !secret teagan_cal_id_work
+    name: !secret teagan_email_work
+    track: true

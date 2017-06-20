@@ -1,0 +1,14 @@
+alias: "Notify Work I Will Be In"
+trigger:
+  - platform: mqtt
+    topic: "/notify/late_to_work"
+    payload: "YES"
+action:
+  - service: notify.slack__massroots
+    data_template:
+      message: >
+        {%- set responses = [
+          'I\'m sorry gang, you really do have to deal with Teagan today.',
+          'It\'s not my fault, Teagan will be coming in today... good luck!',
+          'Teagan is now your responsibility for the day, have fun!'] -%}
+        Eddie> {{ responses | random }}

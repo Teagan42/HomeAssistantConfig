@@ -1,0 +1,4 @@
+platform: snmp
+community: public
+host: 10.0.10.1
+baseoid: 1.3.6.1.2.1.4.22.1.2

@@ -1,0 +1,6 @@
+name: Persia's Room
+view: no
+icon: mdi:human-child
+entities:
+  - switch.persia_ceiling_light
+  - fan.persia_ceiling_fan

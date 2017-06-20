@@ -1,0 +1,5 @@
+name: "Nestico's House"
+latitude: !secret nestico_lat
+longitude: !secret nestico_long
+radius: 25
+icon: mdi:incognito

@@ -1,0 +1,5 @@
+platform: samsungtv
+host: 10.0.11.121
+port: 8001
+name: Agrajag
+mac: !secret chillroom_tv_mac

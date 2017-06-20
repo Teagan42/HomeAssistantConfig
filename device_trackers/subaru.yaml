@@ -1,0 +1,6 @@
+platform: automatic
+client_id: !secret automatic_client_id
+secret: !secret automatic_client_secret
+username: !secret automatic_subaru_username
+password: !secret automatic_subaru_password
+track_new_devices: False

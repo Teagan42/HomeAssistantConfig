@@ -1,0 +1,12 @@
+alias: Turn Off Dining Room Light
+trigger:
+  - platform: state
+    entity_id: switch.dining_room_light
+    state: 'on'
+    for:
+      hours: 1
+      minutes: 30
+action:
+  - service: switch.turn_off
+    data:
+      entity_id: switch.dining_room_light

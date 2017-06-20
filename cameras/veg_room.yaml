@@ -1,0 +1,6 @@
+platform: foscam
+ip: 10.0.11.111
+name: Veg Room
+port: 88
+username: !secret camera_username
+password: !secret camera_password  

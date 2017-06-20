@@ -1,0 +1,6 @@
+platform: octoprint
+name: Nutrimatic
+monitored_conditions:
+  - Current State
+  - Temperatures
+  - Job Percentage

@@ -1,0 +1,27 @@
+alias: Turn On Dining Room Light
+trigger:
+  - platform: state
+    entity_id: binary_sensor.dining_room_motion
+    from: 'off'
+    to: 'on'
+condition:
+  - condition: and
+    conditions:
+    - condition: state
+      entity_id: switch.dining_room_ceiling_light
+      state: 'off'
+    - condition: or
+      conditions:
+        - condition: sun
+          after: sunset
+          after_offset: "-01:00:00"
+        - condition: sun
+          before: sunrise
+          before_offset: "-01:00:00"
+action:
+  - service: input_boolean.turn_on
+    data:
+      entity_id: input_boolean.light_from_motion_dining
+  - service: switch.turn_on
+    data:
+      entity_id: switch.dining_room_ceiling_light

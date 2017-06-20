@@ -1,0 +1,13 @@
+alias: Leave Home
+trigger:
+  - platform: template
+    value_template: >
+      {{
+        states.group.family.state != 'home'
+        and
+        states.group.trusted_friends.state != 'home'
+      }}
+action:
+  - service: script.lockup_house
+    data:
+      away: True

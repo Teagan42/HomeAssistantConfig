@@ -1,0 +1,5 @@
+name: Alex's House
+latitude: !secret alex_lat
+longitude: !secret alex_long
+radius: 20
+icon: mdi:human-child

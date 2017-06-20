@@ -1,0 +1,5 @@
+platform: samsungtv
+host: 10.0.11.124
+port: 8001
+name: Beeblebrox
+mac: !secret livingroom_tv_mac

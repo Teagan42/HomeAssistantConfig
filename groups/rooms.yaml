@@ -1,0 +1,7 @@
+name: Rooms
+view: yes
+icon: mdi:bank
+entities:
+  - group.room_living_room
+  - group.room_dining_room
+  - group.room_chill_room

@@ -1,0 +1,7 @@
+name: Living Room
+view: no
+icon: mdi:television-guide
+entities:
+  - media_player.beeblebrox
+  - switch.living_room_ceiling_light
+  - fan.living_room_ceiling_fan

@@ -1,0 +1,126 @@
+sequence:
+  - service: mqtt.publish
+    data_template:
+      retain: >
+        {%- if retain is defined -%}
+          {{ retain }}
+        {%- else -%}
+          false
+        {%- endif -%}
+      qos: >
+        {%- if qos is defined -%}
+          {{ qos }}
+        {%- else -%}
+          1
+        {%- endif -%}
+      topic: >
+        owntracks/teagan/
+        {%- if teagan_device is defined -%}
+          {{ teagan_device }}
+        {%- else -%}
+          phone
+        {%- endif -%}
+        /cmd
+      payload: >
+        {"_type": "cmd",
+         "action": "notify",
+         "notification": {
+           "_type": "notify",
+           "title": "{{ title }}",
+           "content": "{{ content }}",
+           "actions": [
+             {%- for action in actions -%}
+             {
+               "_type": "action",
+               "title": "{{ action.title }}",
+               "publishTopic": "{{ action.topic }}",
+               "data": "{{ action.data }}"
+             }{%- if not loop.last -%},{%- endif -%}
+             {%- endfor %}
+           ]
+         }
+        }
+  - service: mqtt.publish
+    data_template:
+      retain: >
+        {%- if retain is defined -%}
+          {{ retain }}
+        {%- else -%}
+          false
+        {%- endif -%}
+      qos: >
+        {%- if qos is defined -%}
+          {{ qos }}
+        {%- else -%}
+          1
+        {%- endif -%}
+      topic: >
+        owntracks/grace/
+        {%- if grace_device is defined -%}
+          {{ grace_device }}
+        {%- else -%}
+          phone
+        {%- endif -%}
+        /cmd
+      payload: >
+        {"_type": "cmd",
+         "action": "notify",
+         "notification": {
+           "_type": "notify",
+           "title": "{{ title }}",
+           "content": "{{ content }}",
+           "actions": [
+             {%- for action in actions -%}
+             {
+               "_type": "action",
+               "title": "{{ action.title }}",
+               "publishTopic": "{{ action.topic }}",
+               "data": "{{ action.data }}"
+             }{%- if not loop.last -%},{%- endif -%}
+             {%- endfor %}
+           ]
+         }
+        }
+  - service: mqtt.publish
+    data_template:
+      retain: >
+        {%- if retain is defined -%}
+          {{ retain }}
+        {%- else -%}
+          false
+        {%- endif -%}
+      qos: >
+        {%- if qos is defined -%}
+          {{ qos }}
+        {%- else -%}
+          1
+        {%- endif -%}
+      topic: >
+        owntracks/persia/
+        {%- if persia_device is defined -%}
+          {{ persia_device }}
+        {%- else -%}
+          phone
+        {%- endif -%}
+        /cmd
+      payload: >
+        {"_type": "cmd",
+         "action": "notify",
+         "notification": {
+           "_type": "notify",
+           "title": "{{ title }}",
+           "content": "{{ content }}",
+           "actions": [
+             {%- for action in actions -%}
+             {
+               "_type": "action",
+               "title": "{{ action.title }}",
+               "publishTopic": "{{ action.topic }}",
+               "data": "{{ action.data }}"
+             }{%- if not loop.last -%},{%- endif -%}
+             {%- endfor %}
+           ]
+         }
+        }
+
+

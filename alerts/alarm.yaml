@@ -1,0 +1,7 @@
+name: Alarm Triggered
+entity_id: alarm_control_panel.magrathea_alarm
+state: 'triggered'
+repeat: 5
+can_acknowledge: True
+notifiers:
+  - mqtt_alarm

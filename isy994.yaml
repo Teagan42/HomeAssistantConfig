@@ -1,0 +1,3 @@
+host: http://ISY994-EMS.int.teagantotally.rocks:80
+username: !secret isy_username
+password: !secret isy_password
