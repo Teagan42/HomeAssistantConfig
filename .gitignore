@@ -2,6 +2,7 @@ secrets.yaml
 plex.conf
 pyozw.sqlite
 known_devices.yaml
+ldap-auth.cfg
 
 ssl/*
 www/*
