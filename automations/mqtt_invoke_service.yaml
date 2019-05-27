@@ -1,0 +1,11 @@
+alias: MQTT Service Invoker
+trigger:
+  platform: mqtt
+  topic: /service/call
+action:
+  event: mqtt.notification_action_fired
+  event_data_template:
+    actionName: '{{ trigger.payload_json.actionName }}'
+    action_data:    
+        category: '{{ trigger.payload_json.action_data.category }}'
+        entity_id: '{{ trigger.payload_json.action_data.entity_id }}'

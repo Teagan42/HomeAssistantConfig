@@ -1,7 +1,0 @@
-alias: Sunrise
-trigger:
-  - platform: sun
-    event: sunrise
-    offset: "00:30:00"
-action:
-  - service: script.day_mode

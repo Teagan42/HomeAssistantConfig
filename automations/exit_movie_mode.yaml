@@ -1,7 +1,0 @@
-alias: Exit Movie Mode
-trigger:
-  - platform: state
-    entity_id: media_player.tv_un55ku6300
-    from: 'playing'
-action:
-  - service: script.exit_movie_mode

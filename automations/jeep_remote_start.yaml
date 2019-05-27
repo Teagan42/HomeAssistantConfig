@@ -1,0 +1,21 @@
+alias: Open Garage on Jeep Remote Start
+trigger:
+  - platform: event    
+    event_type: automatic_update
+    event_data:
+      type: 'ignition:on'
+      vehicle:
+        id: 'C_F871809A2ADDA78F'
+condition:
+  - condition: and
+    conditions:
+      - condition: state
+        entity_id: device_tracker.2015_jeep_cherokee
+        state: home
+      - condition: state
+        entity_id: cover.garage_door
+        state: closed
+action:
+  - service: cover.open_cover
+    data:
+      entity_id: cover.garage_door
