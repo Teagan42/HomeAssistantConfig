@@ -1,4 +1,0 @@
-platform: opencv
-name: Front Door
-source:
-  - entity_id: camera.front_door

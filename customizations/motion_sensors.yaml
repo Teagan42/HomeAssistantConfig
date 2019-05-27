@@ -1,8 +1,0 @@
-binary_sensor.dining_room_motion:
-  device_class: motion
-binary_sensor.kitchen_motion:
-  device_class: motion
-binary_sensor.garage_motion:
-  device_class: motion
-binary_sensor.grow_motion_sensor:
-  device_class: motion

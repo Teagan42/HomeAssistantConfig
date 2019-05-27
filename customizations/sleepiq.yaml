@@ -1,8 +1,0 @@
-binary_sensor.sleepnumber_teagan_grace_is_in_bed:
-  friendly_name: Grace is Asleep
-sensor.sleepnumber_teagan_grace_sleepnumber:
-  friendly_name: "Grace's Sleep Number"
-binary_sensor.sleepnumber_teagan_teagan_is_in_bed:
-  friendly_name: Teagan is Asleep
-sensor.sleepnumber_teagan_teagan_sleepnumber:
-  friendly_name: "Teagan's Sleep Number"
