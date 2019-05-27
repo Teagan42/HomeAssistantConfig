@@ -1,0 +1,3 @@
+resources:
+  - url: /local/surveillance-card.js?v=0
+    type: module
