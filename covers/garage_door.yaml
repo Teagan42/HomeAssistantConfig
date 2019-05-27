@@ -1,6 +1,4 @@
-platform: mqtt
-name: Garage Door
-state_topic: "/home/garage/door"
-command_topic: "/home/garage/door/trigger"
-state_open: "open"
-state_closed: "closed"
+platform: myq
+username: !secret myq_username
+password: !secret myq_password
+type: chamberlain
