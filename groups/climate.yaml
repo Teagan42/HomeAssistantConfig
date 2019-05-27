@@ -1,0 +1,6 @@
+name: Climate
+view: true
+entities:
+  - group.away_temperatures
+  - group.home_temperatures
+  - group.current_temperatures

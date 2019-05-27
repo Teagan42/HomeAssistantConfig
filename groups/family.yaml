@@ -1,7 +1,8 @@
 name: Family
-view: no
-icon: mdi:account-multiple
+view: False
 entities:
-  - device_tracker.grace_phone
-  - device_tracker.persia_zte
-  - device_tracker.teagan_phone
+  - device_tracker.google_maps_103986498285097155976  # Teagan
+  - device_tracker.google_maps_116782966585867323452  # Grace
+  - device_tracker.google_maps_117531264484752175311  # Alan
+  - device_tracker.gina
+  - device_tracker.persiasiphone

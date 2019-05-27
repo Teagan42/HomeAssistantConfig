@@ -1,6 +1,0 @@
-name: Bedrooms
-view: yes
-icon: mdi:hotel
-entities:
-  - group.bedroom_persia
-  - group.bedroom_master

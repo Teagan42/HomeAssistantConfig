@@ -1,6 +1,0 @@
-name: Chill Room
-view: no
-icon: mdi:auto-fix
-entities:
-  - switch.chill_room_lights
-  - media_player.agrajag

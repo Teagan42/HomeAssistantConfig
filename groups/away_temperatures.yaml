@@ -1,0 +1,6 @@
+name: Away Mode
+view: false
+control: hidden
+entities:
+  - input_number.thermostat_lower_away
+  - input_number.thermostat_upper_away

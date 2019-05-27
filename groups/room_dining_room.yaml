@@ -1,9 +1,0 @@
-name: Dining Room
-view: no
-icon: mdi:food
-entities:
-  - switch.dining_room_ceiling_light
-  - binary_sensor.dining_room_motion
-  - fan.dining_room_ceiling_fan
-  - switch.kitchen_light
-  - binary_sensor.kitchen_motion

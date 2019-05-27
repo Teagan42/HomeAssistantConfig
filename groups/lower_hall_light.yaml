@@ -1,0 +1,7 @@
+view: False
+icon: mdi:lightbulb
+name: Lower Hall Light
+entities:
+  - switch.lower_hall_light
+  - switch.lower_hall_switch_1
+  - switch.lower_hall_switch_2

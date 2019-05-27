@@ -1,0 +1,6 @@
+name: Home Mode
+view: false
+control: hidden
+entities:
+  - input_number.thermostat_lower_home
+  - input_number.thermostat_upper_home

@@ -1,0 +1,8 @@
+name: Family
+view: False
+entities:
+  - device_tracker.taylor
+  - device_tracker.patrick
+  - device_tracker.james
+  - device_tracker.valerie
+  - device_tracker.dominic

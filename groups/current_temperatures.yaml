@@ -1,0 +1,6 @@
+name: Current
+view: false
+control: hidden
+entities:
+  - input_number.thermostat_lower
+  - input_number.thermostat_upper
