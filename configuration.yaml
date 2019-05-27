@@ -1,78 +1,146 @@
 homeassistant:
   name: Heart of Gold
-  latitude: !secret latitude
-  longitude: !secret longitude
-  elevation: 1724
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  elevation: 1954
   unit_system: imperial
-  time_zone: America/Denver
-  customize: !include_dir_merge_named customizations
+  time_zone: !secret home_timezone
+  auth_providers:
+    - type: homeassistant
+    - type: command_line
+      name: LDAP
+      command: /config/ldap-auth.sh
+      args: ["/config/ldap-auth.cfg"]
+      meta: True
+  whitelist_external_dirs:
+    - /tmp
+  # Customization file
+  customize: !include customize.yaml
 
-ffmpeg:
+# Enables the frontend
+frontend:
+  javascript_version: auto
+  extra_html_url:
+    - /local/surveillance-card.js?v=0
+  themes: !include_dir_named frontend/themes
+
+# Enables configuration UI
+config:
+
+ios:
+  push: 
+    categories: !include_dir_list ios_push_categories
 
 http:
-  base_url: http://deepthought:8123
+  # Secrets are defined in the file secrets.yaml
+  # api_password: !secret http_password
+  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+  ssl_key: /config/ssl/prettybaked.key
+  ssl_certificate: /config/ssl/prettybaked.crt
+  base_url: https://home.prettybaked.com:8123 
 
-octoprint:
-  host: octopi.int.teagantotally.rocks
-  api_key: !secret printer_api_key
+system_health:
 
-group: !include_dir_named groups
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
 
-alert: !include_dir_named alerts
+# Discover some devices automatically
+discovery:
 
-automation: !include_dir_list automations
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
 
-proximity: !include_dir_named proximities
+# Enables support for tracking state changes over time
+history:
 
-android_ip_webcam: !include_dir_list android_ip_webcams
+# View all events in a logbook
+logbook:
 
-script: !include_dir_named scripts
+# Enables a map showing the location of tracked devices
+map:
 
-camera: !include_dir_list cameras
+# Track the sun
+sun:
 
-google: !include google_oauth.yaml
-
+# Security
 alarm_control_panel: !include_dir_list alarm_control_panels
 
-media_player: !include_dir_list media_players
-
-isy994: !include isy994.yaml
-
-image_processing: !include_dir_list image_processing
-
-sleepiq: !include sleepiq.yaml
-
+# Notifiers
 notify: !include_dir_list notifiers
+alert: !include_dir_named alerts
 
-mqtt: !include mqtt.yaml
+# Settings
+input_number: !include_dir_named input_numbers
 
-input_boolean: !include_dir_named input_booleans
+# Groups
+group: !include_dir_named groups
 
-binary_sensor: !include_dir_list binary_sensors
+# YAML Scripts
+script: !include_dir_named scripts
 
-device_tracker: !include_dir_list device_trackers
+# REST Requests
+rest_command: !include_dir_named rest_commands
 
-sensor: !include_dir_list sensors
+# Zones
+zone: !include_dir_list zones
 
 cover: !include_dir_list covers
 
-zone: !include_dir_list zones
+camera: !include_dir_list cameras
 
-logbook:
+image_processing: !include_dir_list image_processing
 
-sun:
-  elevation: 1724
+light: !include_dir_list lights
 
-history:
+# Track devices
+device_tracker: !include_dir_list device_trackers
+person:
 
-frontend:
+# Automation
+automation: !include_dir_list automations
 
-#discovery:
+# Sensors
+sensor: !include_dir_list sensors
+binary_sensor: !include_dir_list binary_sensors
 
-conversation:
+# Media
+media_player: !include_dir_list media_players
+remote: !include_dir_list remotes
+cast:
+  media_player: !include_dir_list cast
+
+# Hubs
+zwave: !include zwave.yaml
+##zha: !include zha.yaml
+isy994: !include isy994.yaml
+
+# Cloud-based
+sleepiq: !include sleepiq.yaml
+neato: !include neato.yaml
+google: !include google.yaml
+
+# Assistants
+#mycroft:
+#  host: 10.0.11.125
+#snips:
+
+tts:
+  - platform: marytts
+    host: automation.home.prettybaked.com
+
+influxdb: !include influx.yaml
+
+recorder:
+  db_url: !secret postgres_db_url
+  purge_keep_days: 30
 
 logger:
-  default: error
+  default: info
   logs:
-    homeassistant.components.camera: critical
-    homeassistant.components.media_player.spotify: info
+    homeassistant.components.device_tracker.automatic: debug
