@@ -1,5 +1,3 @@
 platform: spotify
 client_id: !secret spotify_client_id
 client_secret: !secret spotify_client_secret
-aliases:
-  124eb98c09e501f3de5ac739e49a47653386754e: 'Living Room'

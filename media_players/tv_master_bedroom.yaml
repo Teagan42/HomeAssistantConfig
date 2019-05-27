@@ -1,0 +1,5 @@
+platform: samsungtv
+host: 10.0.11.22
+port: 8001
+name: Master Bedroom TV
+mac: 54:bd:79:29:19:9e

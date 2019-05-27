@@ -1,0 +1,5 @@
+platform: samsungtv
+host: 10.0.11.52
+port: 8001
+name: Tripping Room TV
+mac: c0:97:27:0c:b4:7c

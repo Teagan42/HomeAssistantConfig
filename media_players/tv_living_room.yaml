@@ -1,0 +1,5 @@
+platform: samsungtv
+host: 10.0.11.20
+port: 8001
+name: Living Room TV
+mac: c0:97:27:0e:b7:30

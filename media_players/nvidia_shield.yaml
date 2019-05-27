@@ -1,0 +1,12 @@
+platform: androidtv
+host: !secret living_room_shield_host
+adb_server_ip: automation.home.prettybaked.com
+adb_server_port: 5037
+#adbkey: "/config/ssh/adbkey"
+name: Living Room Shield
+apps:
+  plex: Plex
+  amazon: Amazon Prime Video
+  netflix: Netflix
+  spotify: Spotify
+  youtube: Youtube
