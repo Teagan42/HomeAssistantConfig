@@ -1,6 +1,7 @@
 secrets.yaml
 plex.conf
 pyozw.sqlite
+known_devices.yaml
 
 ssl/*
 www/*
