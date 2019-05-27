@@ -1,0 +1,8 @@
+platform: dlib_face_identify
+source:
+  - entity_id: camera.front_door
+  - entity_id: camera.entry_room
+faces:
+  Teagan: /config/www/teagan.jpeg
+  Grace: /config/www/grace.png
+  Alan: /config/www/alan.jpg

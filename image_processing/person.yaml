@@ -1,0 +1,12 @@
+platform: tensorflow
+source:
+  - entity_id: camera.driveway
+  - entity_id: camera.front_yard
+  - entity_id: camera.front_door
+file_out:
+  - "/tmp/{{ camera_entity.split('.')[1] }}_latest.jpg"
+model:
+  graph: /config/tensorflow/frozen_inference_graph.pb
+  categories:
+    - person
+    - dog
