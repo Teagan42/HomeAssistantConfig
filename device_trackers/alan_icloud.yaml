@@ -1,0 +1,4 @@
+platform: icloud
+username: !secret icloud_alan_username
+password: !secret icloud_alan_password
+
