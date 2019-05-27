@@ -1,0 +1,4 @@
+platform: harmony
+name: Office Harmony Hub
+host: 10.0.11.27
+port: 8088
