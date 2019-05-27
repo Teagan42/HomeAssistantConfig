@@ -2,6 +2,7 @@ secrets.yaml
 plex.conf
 pyozw.sqlite
 known_devices.yaml
+google_calendars.yaml
 ldap-auth.cfg
 html5_push_registrations.conf
 home-assistant_v2.db*
