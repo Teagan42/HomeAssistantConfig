@@ -1,0 +1,5 @@
+name: James & Val
+latitude: !secret james_val_house_latitude
+longitude: !secret james_val_house_longitude
+radius: 50
+icon: mdi:glasses

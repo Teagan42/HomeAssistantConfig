@@ -1,0 +1,5 @@
+name: Ben's
+latitude: !secret ben_house_latitude
+longitude: !secret ben_house_longitude
+radius: 50
+icon: mdi:snowflake

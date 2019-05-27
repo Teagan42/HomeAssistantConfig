@@ -1,5 +1,0 @@
-name: Parking Garage
-latitude: !secret parking_garage_lat
-longitude: !secret parking_garage_long
-radius: 50
-icon: mdi:car

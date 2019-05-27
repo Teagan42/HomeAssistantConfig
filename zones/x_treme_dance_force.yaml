@@ -1,5 +1,0 @@
-name: "X Treme Dance Force"
-latitude: !secret xdf_lat
-longitude: !secret xdf_long
-radius: 20
-icon: mdi:run-fast

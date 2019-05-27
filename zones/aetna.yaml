@@ -1,0 +1,6 @@
+name: Aetna
+latitude: !secret aetna_latitude
+longitude: !secret aetna_longitude
+radius: 100
+icon: mdi:plus-network
+

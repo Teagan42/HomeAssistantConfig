@@ -1,0 +1,5 @@
+name: LoDo Parking Garage
+latitude: !secret parking_garage_latitude
+longitude: !secret parking_garage_longitude
+radius: 100
+icon: mdi:car

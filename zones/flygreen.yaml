@@ -1,0 +1,6 @@
+name: Fly Green Disc Golf
+latitude: !secret flygreen_latitude
+longitude: !secret flygreen_longitude
+radius: 100
+icon: mdi:blender
+

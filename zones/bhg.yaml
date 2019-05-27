@@ -1,0 +1,6 @@
+name: BHG
+latitude: !secret bhg_latitude
+longitude: !secret bhg_longitude
+radius: 100
+icon: mdi:pill
+

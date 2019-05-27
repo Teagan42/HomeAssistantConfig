@@ -1,0 +1,5 @@
+name: Keith & Becky
+latitude: !secret keith_becky_house_latitude
+longitude: !secret keith_becky_house_longitude
+radius: 50
+icon: mdi:nature-people

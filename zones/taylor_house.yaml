@@ -1,5 +1,0 @@
-name: "Taylor's House"
-latitude: !secret taylor_lat
-longitude: !secret taylor_long
-radius: 20
-icon: mdi:test-tube

@@ -1,0 +1,6 @@
+name: "Persia's School"
+latitude: !secret persia_school_latitude
+longitude: !secret persia_school_longitude
+radius: 150
+icon: mdi:chair-school
+
