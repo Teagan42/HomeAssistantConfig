@@ -1,4 +1,6 @@
 secrets.yaml
 plex.conf
+pyozw.sqlite
+
 ssl/*
 www/*
