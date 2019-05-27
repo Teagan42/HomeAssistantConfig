@@ -1,0 +1,3 @@
+platform: local_file
+name: TensorFlow Front Door
+file_path: /tmp/front_door_latest.jpg

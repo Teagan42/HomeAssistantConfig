@@ -1,6 +1,0 @@
-platform: foscam
-ip: 10.0.11.112
-name: Grow Closet
-port: 88
-username: !secret camera_username
-password: !secret camera_password  

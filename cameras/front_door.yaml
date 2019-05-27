@@ -1,6 +1,0 @@
-platform: foscam
-ip: 10.0.11.110
-name: Front Door
-port: 88
-username: !secret camera_username
-password: !secret camera_password  

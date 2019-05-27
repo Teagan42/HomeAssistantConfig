@@ -1,0 +1,6 @@
+platform: uvc
+nvr: !secret nvr_host
+key: !secret nvr_api_key
+password: !secret uvc_password
+port: 7080
+ssl: false

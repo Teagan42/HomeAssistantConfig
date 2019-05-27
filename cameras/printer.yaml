@@ -1,3 +1,0 @@
-platform: mjpeg
-name: Printer
-mjpeg_url: http://octopi.int.teagantotally.rocks/webcam/?action=stream
