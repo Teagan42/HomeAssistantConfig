@@ -1,0 +1,7 @@
+platform: group
+name: Garage Lights
+entities:
+  - light.garage_front_1
+  - light.garage_front_2
+  - light.garage_front_3
+  - light.garage_front_4

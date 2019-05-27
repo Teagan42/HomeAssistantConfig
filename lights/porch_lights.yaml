@@ -1,0 +1,5 @@
+platform: group
+name: Porch Lights
+entities:
+  - light.porch_1
+  - light.porch_2
