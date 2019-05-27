@@ -3,6 +3,7 @@ plex.conf
 pyozw.sqlite
 known_devices.yaml
 ldap-auth.cfg
+html5_push_registrations.conf
 
 icloud/*
 ssl/*
