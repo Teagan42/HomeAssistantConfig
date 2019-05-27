@@ -15,4 +15,4 @@ monitored_conditions:
   - minutely_summary
   - hourly_summary
   - daily_summary
- 
+

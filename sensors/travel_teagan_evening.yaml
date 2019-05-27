@@ -1,7 +1,0 @@
-platform: google_travel_time
-name: Teagan Evening
-api_key: !secret google_key
-destination: !secret home_address
-origin: !secret massroots_address
-options:
-  mode: driving

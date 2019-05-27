@@ -1,0 +1,8 @@
+platform: rest
+scan_interval: 14400
+name: BHG Closes At
+resource: !secret google_places_bhg
+verify_ssl: true
+value_template: >
+  {%- set day_of_week = now().weekday() + 1 -%}
+  {{ (value_json['result']['opening_hours']['periods'] | selectattr('open.day', 'equalto', day_of_week) | first).close.time }}

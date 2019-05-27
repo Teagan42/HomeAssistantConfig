@@ -1,0 +1,13 @@
+platform: template
+sensors:
+  alan_gps:
+    friendly_name: Alan
+    value_template: >
+      {%- set states = [states.device_tracker.alan_icloud.state, states.device_tracker.deviphone.state, states.device_tracker.google_maps_117531264484752175311.state] -%}
+      {%- if 'garage_radius' in states -%}
+        garage_radius
+      {%- elif 'home' in states -%}
+        home
+      {%- else -%}
+        not_home
+      {%- endif -%}

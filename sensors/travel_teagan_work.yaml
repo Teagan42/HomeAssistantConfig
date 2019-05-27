@@ -1,0 +1,6 @@
+platform: waze_travel_time
+name: Teagan to Work
+origin:  person.teagan
+destination: zone.aetna
+region: US
+realtime: True
