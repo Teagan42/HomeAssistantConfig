@@ -4,6 +4,7 @@ pyozw.sqlite
 known_devices.yaml
 ldap-auth.cfg
 
+icloud/*
 ssl/*
 www/*
 tensorflow/*
