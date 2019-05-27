@@ -1,4 +1,0 @@
-zone: james_house
-devices:
-  - device_tracker.teagan_phone
-tolerance: 20
