@@ -1,0 +1,9 @@
+platform: rest
+name: Grace in Bedroom
+resource: http://10.0.11.2:8123/api/states/binary_sensor.grace_in_bedroom
+timeout: 30
+method: GET
+device_class: occupancy
+value_template: '{{value_json.state}}'
+headers:
+  Authorization: !secret master_bedroom_key

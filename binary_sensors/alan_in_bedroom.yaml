@@ -1,0 +1,9 @@
+platform: rest
+name: Alan in Bedroom
+resource: http://10.0.11.2:8123/api/states/binary_sensor.alan_in_bedroom
+timeout: 30
+device_class: occupancy
+method: GET
+value_template: '{{value_json.state}}'
+headers:
+  Authorization: !secret master_bedroom_key
