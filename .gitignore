@@ -5,3 +5,5 @@ known_devices.yaml
 
 ssl/*
 www/*
+tensorflow/*
+tensorflow_wheels/*
