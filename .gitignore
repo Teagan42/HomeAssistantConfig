@@ -9,6 +9,8 @@ home-assistant_v2.db*
 deps/*
 icloud/*
 ssl/*
+ssh/*
+tts/*
 www/*
 tensorflow/*
 tensorflow_wheels/*
