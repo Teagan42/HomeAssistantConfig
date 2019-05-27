@@ -1,0 +1,6 @@
+name: Front Door Timeout
+initial: 20
+min: 5
+max: 60
+step: 5
+unit_of_measurement: minutes

@@ -1,0 +1,6 @@
+name: Lower Hall Light Motion Timeout
+initial: 10
+min: 1
+max: 30
+step: 5
+unit_of_measurement: minutes

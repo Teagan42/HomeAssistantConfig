@@ -1,0 +1,6 @@
+name: Kitchen Light Motion Timeout
+initial: 30
+min: 10
+max: 120
+step: 10
+unit_of_measurement: minutes

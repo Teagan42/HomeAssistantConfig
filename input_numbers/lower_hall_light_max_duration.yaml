@@ -1,0 +1,6 @@
+name: Lower Hall Light Timeout
+initial: 30
+min: 5
+max: 120
+step: 5
+unit_of_measurement: minutes

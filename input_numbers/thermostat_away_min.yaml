@@ -1,0 +1,6 @@
+name: Thermostat Away Min
+initial: 65
+min: 60
+max: 70
+step: 1
+unit_of_measurement: °F

@@ -1,0 +1,6 @@
+name: Kitchen Light Timeout
+initial: 120
+min: 40
+max: 180
+step: 10
+unit_of_measurement: minutes

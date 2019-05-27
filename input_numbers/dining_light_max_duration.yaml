@@ -1,0 +1,6 @@
+name: Dining Room Light Timeout
+initial: 120
+min: 60
+max: 240
+step: 10
+unit_of_measurement: minutes

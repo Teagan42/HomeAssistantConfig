@@ -1,0 +1,6 @@
+name: Thermostat Target Temp
+initial: 70
+min: 65
+max: 80
+step: 1
+unit_of_measurement: °F
