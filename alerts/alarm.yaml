@@ -5,3 +5,4 @@ repeat: 5
 can_acknowledge: True
 notifiers:
   - mqtt_alarm
+

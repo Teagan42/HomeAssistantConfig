@@ -6,3 +6,4 @@ skip_first: True
 can_acknowledge: True
 notifiers:
   - mqtt_all
+
