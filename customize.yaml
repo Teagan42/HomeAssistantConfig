@@ -1,0 +1,101 @@
+light.osram_lightify_flex_rgbw_00a4ce42_3:
+  friendly_name: Couch Lights
+  supported_features: 51
+media_player.my_plex_824x1c9f1mt:
+  friendly_name: Living Room TV
+media_player.my_plex_ead79392dc1a30ac_com_plexapp_android:
+  friendly_name: Master Bedroom TV
+media_player.my_plex_48d04c6c0bf62ed0_com_plexapp_android:
+  friendly_name: Office TV
+sensor.schlage_be469_touchscreen_deadbolt_access_control:
+  hidden: true
+sensor.schlage_be469_touchscreen_deadbolt_alarm_level:
+  hidden: true
+sensor.schlage_be469_touchscreen_deadbolt_alarm_type:
+  hidden: true
+sensor.schlage_be469_touchscreen_deadbolt_burglar:
+  hidden: true
+sensor.schlage_be469_touchscreen_deadbolt_sourcenodeid:
+  hidden: true
+sensor.schlage_be469_touchscreen_deadbolt_system:
+  hidden: true
+sensor.kitchen_arlarm:
+  hidden: true
+sensor.kitchen_alarm_level:
+  hidden: true
+sensor.kitchen_alarm_type:
+  hidden: true
+sensor.kitchen_angle_position:
+  hidden: true
+sensor.kitchen_barometric_pressure:
+  hidden: true
+sensor.kitchen_co2_level:
+  hidden: true
+sensor.kitchen_dew_point:
+  hidden: true
+sensor.kitchen_node_id:
+  hidden: true
+sensor.kitchen_power:
+  hidden: true
+sensor.kitchen_seismic_magnitude:
+  hidden: true
+sensor.kitchen_tank_capacity:
+  hidden: true
+sensor.kitchen_tide_level:
+  hidden: true
+light.living_room_ceiling_fan_light:
+  hidden: true
+sensor.lower_hall_alarm_level:
+  hidden: true
+sensor.lower_hall_alarm_type:
+  hidden: true
+sensor.lower_hall_relative_humidity:
+  hidden: true
+light.master_ceiling_fan_light:
+  hidden: true
+light.persia_ceiling_fan_light:
+  hidden: true
+binary_sensor.basement_sensor:
+  device_class: motion
+binary_sensor.kitchen_motion:
+  device_class: motion
+sensor.aeotec_zw100_multisensor_6_alarm_level_2:
+  hidden: true
+sensor.aeotec_zw100_multisensor_6_alarm_level_3:
+  hidden: true
+sensor.dining_room_alarm_type:
+  hidden: true
+sensor.dining_room_burglar:
+  hidden: true
+sensor.dining_room_relative_humidity:
+  hidden: true
+sensor.dining_room_sourcenodeid:
+  hidden: true
+binary_sensor.dining_room_motion:
+  device_class: motion
+binary_sensor.lower_hall_motion:
+  device_class: motion
+binary_sensor.sleepnumber_teagan_grace_is_in_bed:
+  hidden: true
+sensor.sleepnumber_teagan_grace_sleepnumber:
+  hidden: true
+binary_sensor.sleepnumber_teagan_teagan_is_in_bed:
+  hidden: true
+sensor.sleepnumber_teagan_teagan_sleepnumber:
+  hidden: true
+zwave.zooz_zse40_4_in_1_sensor_2:
+  friendly_name: Lower Hall Sensor
+binary_sensor.basement_motion:
+  device_class: motion
+binary_sensor.sleepnumber_master_grace_is_in_bed:
+  device_class: presence
+sensor.sleepnumber_master_grace_sleepnumber:
+  icon: mdi:bed
+binary_sensor.sleepnumber_master_teagan_is_in_bed:
+  device_class: presence
+sensor.sleepnumber_master_teagan_sleepnumber:
+  icon: mdi:bed
+input_number.lower_hall_light_max_duration:
+  friendly_name: Timeout
+device_tracker.deviphone:
+  friendly_name: Alan iPhone
