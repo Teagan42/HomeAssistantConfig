@@ -1,4 +1,0 @@
-platform: slack
-name: Slack - MassRoots
-api_key: !secret slack_api_key
-default_channel: '#dev-team'

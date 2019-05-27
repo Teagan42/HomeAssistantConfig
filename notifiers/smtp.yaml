@@ -1,0 +1,11 @@
+name: Email
+platform: untargeted_smtp
+server: smtp.gmail.com
+port: 587
+timeout: 15
+debug: true
+encryption: starttls
+sender: !secret google_eddie_username
+username: !secret google_eddie_username
+password: !secret google_eddie_password
+sender_name: Eddie from the Heart of Gold
