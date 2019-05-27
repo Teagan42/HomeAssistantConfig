@@ -6,6 +6,7 @@ ldap-auth.cfg
 html5_push_registrations.conf
 home-assistant_v2.db*
 
+deps/*
 icloud/*
 ssl/*
 www/*
