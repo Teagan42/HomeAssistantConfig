@@ -1,0 +1,8 @@
+
+host: influx.home.prettybaked.com
+port: 8086
+database: homeassistant
+default_measurement: state
+tags:
+  instance: prod
+  source: hass
