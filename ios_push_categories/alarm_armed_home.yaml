@@ -1,0 +1,7 @@
+name: Alarm Armed (Home)
+identifier: securityalarmarmhome
+actions:
+  - identifier: actionalarmdisarm
+    title: Disarm
+  - identifier: actionalarmarmaway
+    title: Arm (Away)

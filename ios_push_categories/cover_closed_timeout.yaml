@@ -1,0 +1,5 @@
+name: Cover Closed Timeout
+identifier: securitycoverclosedtimeout
+actions:
+  - identifier: actionopencover
+    title: Open

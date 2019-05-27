@@ -1,0 +1,5 @@
+name: Alarm Triggered
+identifier: securityalarmtriggered
+actions:
+  - identifier: actionalarmarmdisarm
+    title: Disarm

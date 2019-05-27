@@ -1,0 +1,7 @@
+name: Someone has left
+identifier: presencedeparted
+actions:
+   - title: Lock
+     identifier: actionlock
+   - title: Unlock
+     identifier: actionunlock

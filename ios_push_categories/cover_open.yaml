@@ -1,0 +1,5 @@
+name: Cover Open
+identifier: securitycoveropened
+actions:
+  - identifier: actionclosecover
+    title: Close

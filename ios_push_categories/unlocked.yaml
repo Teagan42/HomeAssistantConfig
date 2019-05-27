@@ -1,0 +1,5 @@
+name: Door Unlocked
+identifier: securityunlocked
+actions:
+  - identifier: actionlock
+    title: Lock

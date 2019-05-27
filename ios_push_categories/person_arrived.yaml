@@ -1,0 +1,7 @@
+name: Someone has arrived
+identifier: presencearrived
+actions:
+   - title: Lock
+     identifier: actionlock
+   - title: Unlock
+     identifier: actionunlock
